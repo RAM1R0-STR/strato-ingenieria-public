@@ -1,0 +1,1128 @@
+body {
+  margin: 0;
+  font-family: 'Inter';
+  width: 100vw;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+header {
+  margin: 0;
+  height: 100vh;
+  /*Establece la altura del elemento para que ocupe el 100% de la altura de la ventana del navegador. */
+  background-image: url(../imagenes/portada.png);
+  background-size: cover;
+  /*Escala la imagen de fondo para cubrir completamente el área del elemento, manteniendo las proporciones de la imagen.*/
+  background-position: center;
+  background-repeat: no-repeat;
+  /*Evita que la imagen de fondo se repita.*/
+}
+
+.portada-container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.logo {
+  margin-top: 10px;
+  max-width: 200px;
+  max-height: 200px;
+  transition: all 0.5s ease-in-out;
+  /* Transición más suave y lenta para el logo */
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  /* Ajusta un poco más la altura para evitar un cambio brusco */
+  padding: 10px 20px;
+  /* Padding intermedio para suavizar */
+  transition: all 0.5s ease-in-out;
+  /* Suaviza la transición del menú */
+}
+
+.lista-menu {
+  display: flex;
+  /*font-family: "Jost";*/
+}
+
+li {
+  list-style: none;
+  margin-right: 15px;
+  /* Ajuste más suave en el margen */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  /* Ligera reducción en el tamaño de la fuente */
+  border-radius: 5px;
+  padding: 8px 12px;
+  /* Padding reducido, pero más suave */
+  transition: all 0.5s ease-in-out;
+  /* Suaviza la transición del hover */
+}
+
+a:hover {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+/*TITULAR*/
+.titular {
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.titular h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: #000000;
+}
+
+.titular a {
+  /*Configuracion de boton "VER SERVICIOS"*/
+  font-size: 14;
+  background-color: #0d6efd;
+  padding: 10px 20px;
+  color: white;
+}
+
+.titular a:hover {
+  background-color: #084298;
+}
+
+p {
+  margin: 0
+}
+
+/*SOBRE NOSOTROS*/
+.nosotros-container {
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  /* Asegura que ocupe todo el ancho */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* Evita el desbordamiento */
+}
+
+.image-container {
+  flex: 1 1 50%;
+  /* Para pantallas grandes, ocupa el 50% */
+  min-height: 100vh;
+  /* Altura mínima más reducida */
+  flex-grow: 1;
+  /* Asegura que ocupe todo el espacio disponible */
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+  /* Ajusta la imagen sin distorsión */
+  min-height: 100vh;
+
+}
+
+.text-container {
+  flex: 1 1 50%;
+  /* Texto ocupa el otro 50% en pantallas grandes */
+  padding: 30px;
+  background-color: #2c3e50;
+  color: white;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/*¿COMO AYUDARTE?*/
+.como-ayudarte-container {
+  margin: 0;
+  background-image: url(../imagenes/fondo-medio5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Se adapta al contenido */
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  /* Padding incluido en el tamaño */
+}
+
+/* Texto con estilo y sombra */
+.text-como-ayudarte {
+  color: white;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  padding: 30px 20px;
+  background: linear-gradient(rgba(71, 71, 71, 0.349), rgba(71, 71, 71, 0.349));
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Estilo para h3 */
+.como-ayudarte-container h3 {
+  font-size: 50px;
+  /* Mantener tamaño de texto original */
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+.como-ayudarte-container p {
+  font-size: 20px;
+  /* Mantener tamaño de texto original */
+}
+
+.como-ayudarte-container a {
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  /* Añadir margen entre botones */
+  max-width: 200px;
+  /* Limitar ancho de botones */
+  width: 100%;
+  /* Asegúrate de que se ajuste al ancho */
+}
+
+.como-ayudarte-container a:hover {
+  background-color: #084298;
+}
+
+.contacto-container {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+  /* Permitir que los elementos se ajusten */
+  justify-content: center;
+  /* Centra los elementos */
+}
+
+
+/*SERVICIOS*/
+#servicios {
+  background-color: #506f8e;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 50px 0;
+  text-align: center;
+  padding: 50px 40px;
+}
+
+.text-servicios {
+  margin: 0 auto;
+  max-width: 1500px;
+  margin-bottom: 50px;
+  color: white;
+  padding-left: 70px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.text-servicios p {
+  line-height: 1.4;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 0;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Tres columnas para pantallas grandes */
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  justify-items: center;
+  max-width: 100%;
+}
+
+.servicios-card1,
+.servicios-card2,
+.servicios-card3,
+.servicios-card4,
+.servicios-card5,
+.servicios-card6 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  height: 200px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.servicios-card1 h4,
+.servicios-card2 h4,
+.servicios-card3 h4,
+.servicios-card4 h4,
+.servicios-card5 h4,
+.servicios-card6 h4 {
+  color: white;
+  font-size: large;
+  padding-top: 20px;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+
+
+.servicios-card1 {
+  background-image: url(../imagenes/servicios1.jpg);
+}
+
+.servicios-card2 {
+  background-image: url(../imagenes/servicios2.jpg);
+}
+
+.servicios-card3 {
+  background-image: url(../imagenes/servicios3.jpg);
+}
+
+.servicios-card4 {
+  background-image: url(../imagenes/estructura-existente.jpg);
+}
+
+.servicios-card5 {
+  background-image: url(../imagenes/servicios-5.jpg);
+}
+
+.servicios-card6 {
+  background-image: url(../imagenes/servicios6.jpg);
+}
+
+
+.servicios-description {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 16, 40, 0.617);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: bottom 0.3s ease;
+}
+
+
+.servicios-card1:hover .servicios-description,
+.servicios-card2:hover .servicios-description,
+.servicios-card3:hover .servicios-description,
+.servicios-card4:hover .servicios-description,
+.servicios-card5:hover .servicios-description,
+.servicios-card6:hover .servicios-description {
+  bottom: 0;
+}
+
+.servicios-card1:hover h4,
+.servicios-card2:hover h4,
+.servicios-card3:hover h4,
+.servicios-card4:hover h4,
+.servicios-card5:hover h4,
+.servicios-card6:hover h4 {
+  opacity: 0;
+}
+
+/*PROYECTOS*/
+#proyectos h3 {
+  padding-top: 50px;
+  text-decoration: none;
+}
+
+/* Carrusel */
+.contenedor-carrusel {
+  padding-top: 25rem;
+  padding-bottom: 20rem;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.owl-carousel .owl-item {
+  margin: 60px;
+  height: 100%;
+}
+
+.owl-carousel img,
+.proyecto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item:hover img {
+  transform: scale(1.5);
+}
+
+.owl-stage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.contenedor-carrusel h3 {
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+}
+
+.proyecto {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.proyecto:hover .descripcion {
+  opacity: 1;
+}
+
+/* CONTACTO */
+#contacto {
+  padding: 50px;
+  background-color: #506f8e;
+  color: white;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Arial, sans-serif; */
+}
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: auto;
+  /* Cambiar el valor fijo de la altura */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  /* Permitir que los elementos se envuelvan en pantallas más pequeñas */
+  gap: 20px;
+  /* Añadir espacio entre los elementos */
+}
+
+.info-contacto {
+  flex: 1;
+  padding-right: 20px;
+  margin-top: 50px;
+}
+
+.info-contacto h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.info-contacto p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.info-contacto h3 {
+  font-size: 20px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.info-contacto i {
+  margin-right: 10px;
+  color: white;
+}
+
+.info-contacto p i {
+  margin-bottom: 20px;
+}
+
+.info-contacto p {
+  margin-bottom: 20px;
+}
+
+.formulario-contacto {
+  flex: 1.5;
+  background-color: #f1f3f4;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.formulario-contacto textarea {
+  height: 150px;
+}
+
+.formulario-contacto button {
+  padding: 15px;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #084298;
+}
+
+
+
+/*WHATSAPP*/
+#whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+
+#page-footer {
+  background-color: #2c3e50;
+  color: white;
+  padding-top: 30px;
+  height: max-content;
+  flex-direction: column;
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  height: max-content;
+}
+
+.footer-credits {
+  background-color: #23313f;
+  align-content: end;
+}
+
+.footer-column-left {
+  flex: 1;
+  text-align: left;
+  margin-left: 10rem;
+  margin-bottom: 20px;
+}
+
+.footer-column-left .logo-footer {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.footer-column-right {
+  flex: 1;
+  text-align: right;
+  margin-right: 10rem;
+  color: white;
+  line-height: 0.5;
+}
+
+.footer-column-right a {
+  color: white;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-column a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-column a i {
+  font-size: 40px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-credits {
+  padding-top: 3px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* RESPONSIVE MENU*/
+@media(max-width:770px) {
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    background: #e5e8e8;
+    width: 100%;
+    display: none;
+  }
+
+  nav .lista-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 20px;
+  }
+
+  .menu-icon {
+    position: fixed;
+    display: block;
+    width: 50px;
+    right: 15px;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 5px 0;
+    background: #e5e8e8;
+    z-index: 100;
+    box-sizing: border-box;
+    height: 70px;
+    transition: all 0.3s ease;
+  }
+
+  .logo {
+    max-width: 200px;
+    max-height: 60px;
+    transition: all 0.3s ease;
+    margin-left: 50px;
+  }
+
+  
+  .titular h2 {
+    padding-top: 4rem;
+    font-size: 30px;
+    padding-bottom: 0.2rem;
+  }
+
+}
+
+/*RESPONSIVE LOGO MENU*/
+@media(max-width:480px) {
+  .logo {
+    max-width: 200px;
+    height: 60px;
+  }
+}
+
+/* NOSOTROS*/
+@media(max-width:885px) {
+  .nosotros-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: min-content;
+    align-items: center;
+    /* Asegura que el contenido esté centrado */
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+    /* Deja que la altura se ajuste automáticamente */
+    flex-grow: 1;
+    min-height: 60vh;
+  }
+
+  .image-container img {
+    width: 100%;
+    min-height: 70vh;
+    object-fit: cover;
+    display: block;
+  }
+
+  .text-container {
+    width: 100%;
+
+    padding: 10px;
+  }
+}
+
+/*COMO AYUDARTE*/
+@media(max-width:515px) {
+
+  .como-ayudarte-container h3 {
+    font-size: 27px;
+  }
+/*
+  .como-ayudarte-container p {
+    font-size: 14px;
+  }
+
+  .como-ayudarte-container a {
+    font-size: 14px;
+    padding: 8px 15px;
+    width: 100%;
+  }
+*/
+}
+
+/*SERVICIOS */
+@media(max-width:900px) {
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /*
+    grid-template-rows: repeat(3, auto);*/
+  }
+
+  .servicios-card1,
+  .servicios-card2,
+  .servicios-card3,
+  .servicios-card4,
+  .servicios-card5,
+  .servicios-card6 {
+    max-width: 600px;
+    /* Mantiene un buen tamaño en pantallas medianas */
+  }
+}
+@media (max-width: 600px) {
+  .text-servicios {
+    padding-left: 2px;
+    /* Ajusta el padding izquierdo para que no se salga de la pantalla en móviles */
+    padding-right: 10px;
+    /* Mantiene un margen a la derecha */
+  }
+}
+@media(max-width:480px) {
+  .servicios-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .servicios-card1,
+  .servicios-card2,
+  .servicios-card3,
+  .servicios-card4,
+  .servicios-card5,
+  .servicios-card6 {
+    max-width: 600px;
+    /* Mantiene un buen tamaño en pantallas medianas */
+  }
+
+  #servicios {
+    padding: 20px 10px;
+    /* Reduce el padding en móviles */
+  }
+
+  .text-servicios {
+    padding-left: 10px;
+    /* Ajusta el padding izquierdo para que no se salga de la pantalla en móviles */
+    padding-right: 10px;
+    /* Mantiene un margen a la derecha */
+  }
+
+  .servicios-card1,
+  .servicios-card2,
+  .servicios-card3,
+  .servicios-card4,
+  .servicios-card5,
+  .servicios-card6 {
+    width: 100%;
+    /* Ocupa todo el ancho */
+    max-width: none;
+    /* Elimina cualquier límite de ancho */
+    min-width: 300px;
+    /* Define un tamaño mínimo para evitar que se reduzcan demasiado */
+    height: 200px;
+    /* Ajusta la altura automáticamente */
+  }
+
+  .servicios-description {
+    padding: 15px;
+    /* Ajusta el padding de la descripción */
+  }
+}
+
+
+
+/*RESPONSIVE PROYECTOS*/
+/*RESPONSIVE CARRUSEL PANTALLAS PEQUEÑAS*/
+@media (max-width: 480px) {
+  .contenedor-carrusel {
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Asegura que el contenido esté alineado verticalmente */
+    width: 100%;
+    overflow: hidden;
+    /* Evita que el contenido desborde */
+  }
+
+  #proyectos h3 {
+    padding-top: 5px;
+    text-decoration: none;
+  }
+
+  .owl-carousel .owl-item {
+    margin: 25px;
+    height: 100%;
+    margin-top: 70px;
+    top: -20px;
+  }
+
+  .owl-carousel {
+    display: block;
+    flex-direction: row;
+    overflow: visible;
+  }
+
+  .owl-carousel .owl-item:hover img {
+    transform: scale(0.1);
+    /* Aplica zoom al pasar el mouse */
+    /* Asegúrate de que el zoom esté centrado */
+    transform-origin: center center;
+    /* Asegura que el zoom esté centrado */
+  }
+
+  .owl-carousel .proyecto {
+    flex: 0 0 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .proyecto img {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto;
+    margin-right: auto;
+    object-fit: contain;
+    /* La imagen se ajustará sin recortarse */
+    display: block;
+    margin: 0 auto;
+    /* Centra la imagen dentro de su contenedor */
+  }
+
+  .contenedor-carrusel {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .owl-carousel {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .owl-carousel .proyecto {
+    flex: 0 0 100%;
+    /* Asegura que cada proyecto ocupe el 100% del contenedor */
+  }
+
+  .proyecto img {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho */
+    height: auto;
+    display: block;
+  }
+}
+
+/*RESPONSIVE CARRUSEL PANTALLAS MEDIANAS*/
+@media (max-width: 600px) {
+  .contenedor-carrusel {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .owl-carousel {
+    display: block;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #proyectos h3 {
+    padding-top: 5px;
+    text-decoration: none;
+  }
+
+  .owl-carousel .owl-item:hover img {
+    transform: scale(1.0);
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+  }
+
+  .owl-carousel .proyecto {
+    flex: 0 0 100%;
+    margin-top: 50px;
+  }
+
+  .owl-carousel .owl-item {
+    margin: 5;
+    height: 100%;
+    margin-top: 50px;
+
+  }
+
+  .proyecto img {
+    width: 90%;
+    /* La imagen ocupará el 100% del ancho disponible */
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    /* Añade un pequeño borde redondeado si quieres darle un toque más estético */
+  }
+}
+
+/*RESPONSIVE CARRUSEL PANTALLAS GRANDES*/
+@media (max-width: 910px) {
+  .contenedor-carrusel {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .owl-carousel {
+    display: block;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #proyectos h3 {
+    padding-top: 5px;
+    text-decoration: none;
+  }
+
+  .owl-carousel .owl-item:hover img {
+    transform: scale(1.2);
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+  }
+
+  .owl-carousel .proyecto {
+    flex: 0 0 100%;
+    margin-top: 50px;
+  }
+
+  .owl-carousel .owl-item {
+    margin: 5;
+    height: 100%;
+    margin-top: 50px;
+
+  }
+
+  .proyecto img {
+    width: 90%;
+    /* La imagen ocupará el 100% del ancho disponible */
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    /* Añade un pequeño borde redondeado si quieres darle un toque más estético */
+  }
+}
+
+/*RESPONSIVE CONTACTO*/
+/* Media Queries para pantallas medianas */
+@media (max-width: 1024px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    /* Apilar los elementos verticalmente */
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .info-contacto,
+  .formulario-contacto {
+    width: 100%;
+    /* Hacer que ambos ocupen el 100% del ancho */
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .formulario-contacto {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .info-contacto,
+  .formulario-contacto {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .info-contacto {
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    margin-top: -10px;
+    /* Ajusta la posición del texto un poco más arriba */
+  }
+
+  .formulario-contacto {
+    padding: 20px;
+  }
+
+  .formulario-contacto button {
+    width: 100%;
+  }
+}
+
+/*RESPONSIVE FOOTER*/
+@media(max-width:780px) {
+  .footer-column-right {
+    display: none;
+  }
+  .footer-column-left{
+    margin-left: 5rem;
+  }
+}
+@media(max-width:480px) {
+  #page-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer-column-left {
+    margin-left: 0;
+  }
+
+  .footer-column-left .logo-footer {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 20px;
+  }
+
+  .footer-column {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+  }
+}
