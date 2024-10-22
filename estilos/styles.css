@@ -77,6 +77,11 @@ a:hover {
   color: #ffffff;
 }
 
+.whatsapp-link:hover {
+  background-color: transparent; /* O el color que desees */
+  color: inherit; /* Mantiene el color original */
+}
+
 /*TITULAR*/
 .titular {
   text-align: center;
