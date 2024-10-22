@@ -41,11 +41,8 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  /* Ajusta un poco más la altura para evitar un cambio brusco */
   padding: 10px 20px;
-  /* Padding intermedio para suavizar */
   transition: all 0.5s ease-in-out;
-  /* Suaviza la transición del menú */
 }
 
 .lista-menu {
@@ -56,7 +53,6 @@ header {
 li {
   list-style: none;
   margin-right: 15px;
-  /* Ajuste más suave en el margen */
 }
 
 a {
@@ -64,12 +60,9 @@ a {
   color: black;
   font-weight: bold;
   font-size: 15px;
-  /* Ligera reducción en el tamaño de la fuente */
   border-radius: 5px;
   padding: 8px 12px;
-  /* Padding reducido, pero más suave */
   transition: all 0.5s ease-in-out;
-  /* Suaviza la transición del hover */
 }
 
 a:hover {
@@ -78,8 +71,13 @@ a:hover {
 }
 
 .whatsapp-link:hover {
-  background-color: transparent; /* O el color que desees */
-  color: inherit; /* Mantiene el color original */
+  background-color: transparent;
+  color: inherit;
+}
+
+.creditos-link:hover{
+  background-color: transparent;
+  color: inherit;
 }
 
 /*TITULAR*/
